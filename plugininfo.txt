@@ -1,0 +1,113 @@
+<plugin>
+
+<playerstat>
+	<label>Quest Points</label><initialvalue>0</initialvalue>
+</playerstat>
+<playerstat>
+	<label>Exploration Points</label><initialvalue>0</initialvalue>
+</playerstat>
+<playerstat>
+	<label>Upgrade Points</label><initialvalue>0</initialvalue>
+</playerstat>
+
+<deckzone>
+     <label>Deck</label>
+     <gamezonetoloadto>Deck</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+<gamezone>
+     <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Deck</label>
+     <isshared>yes</isshared>
+</gamezone>
+
+<gamezone>
+     <label>Discard</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+     <isshared>yes</isshared>
+</gamezone>
+
+<phase><label>Destiny Phase</label></phase>
+<phase><label>Adventure Phase</label></phase>
+<phase><label>Option Phase</label></phase>
+<phase><label>Quest Phase</label></phase>
+<phase><label>End Phase</label></phase>
+
+<generalfunction>
+	<label>Draw a Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Deck</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Phase</label>
+	<kind>NEXTPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Previous Phase</label>
+	<kind>PREVIOUSPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Turn</label>
+	<kind>NEXTTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+
+</generalfunction>
+<generalfunction>
+	<label>Previous Turn</label>
+	<kind>PREVIOUSTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction><label>Roll Die</label><kind>ROLLD6</kind><includeasbutton>yes</includeasbutton></generalfunction>
+
+<cardfunction>
+	<label>Upgrade -1</label>
+	<kind>REMOVECOUNTERGREEN</kind>
+	<color>green</color>
+	<includeasbutton>yes</includeasbutton>
+</cardfunction>
+
+<cardfunction>
+	<label>Upgrade +1</label>
+	<kind>ADDCOUNTER</kind>
+	<color>green</color>
+	<includeasbutton>yes</includeasbutton>
+	<PositionX>.75</PositionX>
+	<PositionY>.04</PositionY>
+</cardfunction>
+
+<cardfunction>
+	<label>Exploration -1</label>
+	<kind>REMOVECOUNTER</kind>
+	<color>violet</color>
+	<includeasbutton>yes</includeasbutton>
+</cardfunction>
+
+<cardfunction>
+	<label>Exploration +1</label>
+	<kind>ADDCOUNTER</kind>
+	<color>violet</color>
+	<includeasbutton>yes</includeasbutton>
+	<PositionX>.5</PositionX>
+	<PositionY>.04</PositionY>
+</cardfunction>
+
+<cardfunction><label>Edit Note</label><kind>EDITNOTE</kind><includeasbutton>yes</includeasbutton><PositionX>.4</PositionX><PositionY>.95</PositionY></cardfunction>
+</plugin>
