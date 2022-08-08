@@ -1,0 +1,5 @@
+ZeldaWindWaker	08-03-22
+plugins/ZeldaWindWaker/plugininfo.txt	https://github.com/timothy-m-gillick/lackeyccg-zeldawindwaker/raw/main/plugininfo.txt	264376
+plugins/ZeldaWindWaker/sets/setimages/general/cardback.jpg	https://github.com/timothy-m-gillick/lackeyccg-zeldawindwaker/raw/main/cardback.jpg	482936
+CardGeneralURLs:		
+https://drive.google.com/drive/folders/1Ue9UWT7u78XRBc0psk_lqGXYDYetV2td?usp=sharing
